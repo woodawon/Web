@@ -1,0 +1,7 @@
+// js 넣기
+<script type="text/javascript" src="test3.js"></script>
+// css 넣기
+<link rel = "stylesheet" href="/test2.css">
+
+console.log("hello world!");
+alert("coding");
