@@ -1,0 +1,43 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="/test2.css">
+    <title>Testview</title>
+</head>
+<body>
+    <strong id="tag-test">hello</strong>
+    <button onclick="myFunction()">Click me</button><br/><br />
+    <input placeholder="Enter Text" type="text"
+    onkeyup="myKeyEvent(this)">
+    <p id = "inputLog"></p>
+    <script type="text/javascript" src="test3.js"></script>
+</body>
+</html> 
+
+/* css */
+body{background-color: blueviolet;}
+#tag-test {
+    color: aqua;
+}
+
+// js
+console.log("hello world!");
+alert("coding");
+
+function myFunction() {
+    const tagTest = document.getElementById('tag-test');
+    if (tagTest.innerHTML === 'hello') {
+        tagTest.innerHTML = 'world';
+    } else {
+        tagTest.innerHTML = 'hello';
+    }
+}
+
+function myKeyEvent(e){
+    var inputLog = document.getElementById('inputLog');
+    inputLog.textContent = e.value;
+}
