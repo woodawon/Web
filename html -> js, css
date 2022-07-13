@@ -13,3 +13,8 @@ alert("환영합니다 " + name + " 님");
 // 입력된 질문을 확인 or 취소 받아 True or False 결과를 출력
 const isAdult = confirm("당신은 성인입니까?");
 console.log(isAdult);
+
+// 과목들 점수 값 받아서 평균 출력하기
+const mathScore = prompt("math score?");
+const engScore = prompt("eng score?");
+alert((Number(mathScore) + Number(engScore)) / 2);
