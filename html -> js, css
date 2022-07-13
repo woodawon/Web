@@ -18,3 +18,11 @@ console.log(isAdult);
 const mathScore = prompt("math score?");
 const engScore = prompt("eng score?");
 alert((Number(mathScore) + Number(engScore)) / 2);
+
+// !name으로 != 의미를 표현할 수 잇음에 주목하기
+const age = prompt('나이');
+const isAdult = age > 19;
+
+if(!isAdult) {
+  console.log('돌아가.');
+}
