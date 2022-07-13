@@ -3,7 +3,13 @@
 // css 넣기
 <link rel = "stylesheet" href="/test2.css">
 
+// 출력값 입력
 console.log("hello world!");
 
+// 값 입력받고, 결과값에 더해짐
 const name = prompt("이름을 입력하세요.");
 alert("환영합니다 " + name + " 님");
+
+// 입력된 질문을 확인 or 취소 받아 True or False 결과를 출력
+const isAdult = confirm("당신은 성인입니까?");
+console.log(isAdult);
