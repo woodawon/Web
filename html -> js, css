@@ -4,4 +4,6 @@
 <link rel = "stylesheet" href="/test2.css">
 
 console.log("hello world!");
-alert("coding");
+
+const name = prompt("이름을 입력하세요.");
+alert("환영합니다 " + name + " 님");
