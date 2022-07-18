@@ -1,0 +1,2 @@
+location.href : url 이동 경로 반환 or 변경
+document.cookie : 이용자 cookie값 가져오기
