@@ -1,0 +1,23 @@
+// 출력값 입력
+console.log("hello world!");
+
+// 값 입력받고, 결과값에 더해짐
+const name = prompt("이름을 입력하세요.");
+alert("환영합니다 " + name + " 님");
+
+// 입력된 질문을 확인 or 취소 받아 True or False 결과를 출력
+const isAdult = confirm("당신은 성인입니까?");
+console.log(isAdult);
+
+// 과목들 점수 값 받아서 평균 출력하기
+const mathScore = prompt("math score?");
+const engScore = prompt("eng score?");
+alert((Number(mathScore) + Number(engScore)) / 2);
+
+// !name으로 != 의미를 표현할 수 잇음에 주목하기
+const age = prompt('나이');
+const isAdult = age > 19;
+
+if(!isAdult) {
+  console.log('돌아가.');
+}
